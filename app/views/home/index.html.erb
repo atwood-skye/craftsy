@@ -1,13 +1,21 @@
+<div class="panel panel-default about-panel">
+  <div class="panel-body">
+    <h2>About Craftsy</h2>
+    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+  </div>
+</div>
 
+<div class="container-fluid">
 
-  <h1>Our Products</h1>
+  <h2>Our Products</h2>
 
   <% @products.each do |product| %>
-    <div class="panel panel-default product-panel">
-      <div class="panel-body">
-        <h2><%= product.name %></h2>
-        <p><%= product.description %></p>
-        <p><%= product.price %></p>
-      </div>
+  <div class="panel panel-default product-panel">
+    <div class="panel-body">
+      <h2><%= product.name %></h2>
+      <p><%= product.description %></p>
+      <p><%= product.price %></p>
     </div>
+  </div>
   <% end %>
+</div>
