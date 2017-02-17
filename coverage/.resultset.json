@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Guest/Desktop/craftsy/spec/models/user_spec.rb": [
+      "/Users/Guest/Desktop/craftsy/spec/features/home_controller_integration_spec.rb": [
         1,
         null,
         1,
@@ -9,9 +9,6 @@
         1,
         1,
         null,
-        1,
-        1,
-        1,
         null,
         null
       ],
@@ -81,9 +78,7 @@
         1,
         1,
         null,
-        null,
-        null,
-        1
+        null
       ],
       "/Users/Guest/Desktop/craftsy/config/environment.rb": [
         null,
@@ -428,7 +423,7 @@
         null,
         null,
         null,
-        null,
+        1,
         null,
         null,
         null,
@@ -563,6 +558,8 @@
         1,
         null,
         1,
+        null,
+        1,
         null
       ],
       "/Users/Guest/Desktop/craftsy/app/models/user.rb": [
@@ -602,6 +599,43 @@
       "/Users/Guest/Desktop/craftsy/app/controllers/home_controller.rb": [
         1,
         1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/craftsy/app/controllers/products_controller.rb": [
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/craftsy/app/controllers/users_controller.rb": [
+        1,
+        1,
+        0,
         null,
         null
       ],
@@ -613,6 +647,54 @@
         1,
         1,
         1,
+        null
+      ],
+      "/Users/Guest/Desktop/craftsy/app/models/ability.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/craftsy/app/models/product.rb": [
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/craftsy/spec/factories/products.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/Guest/Desktop/craftsy/spec/factories/users.rb": [
@@ -627,8 +709,40 @@
         1,
         1,
         null
+      ],
+      "/Users/Guest/Desktop/craftsy/spec/models/product_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/craftsy/spec/models/user_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1487350071
+    "timestamp": 1487357919
   }
 }

@@ -64,5 +64,3 @@ Shoulda::Matchers.configure do |config|
     with.library :rails
   end
 end
-
-include Warden::Test::Helpers
