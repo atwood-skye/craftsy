@@ -1,17 +1,13 @@
-<div class="container">
 
-<h1>Our Products</h1>
 
-<% if @products.any? %>
-<div class="row">
+  <h1>Our Products</h1>
+
   <% @products.each do |product| %>
-  <div class="col md 4">
-    <p><%= product.name %></p>
-    <p><%= product.description %></p>
-    <p><%= product.price %></p>
-  </div>
+    <div class="panel panel-default product-panel">
+      <div class="panel-body">
+        <h2><%= product.name %></h2>
+        <p><%= product.description %></p>
+        <p><%= product.price %></p>
+      </div>
+    </div>
   <% end %>
-  <% end %>
-
-</div>
-</div>
