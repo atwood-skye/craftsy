@@ -1,0 +1,13 @@
+<div class="container-fluid">
+  <div class="panel panel-default blue-panel">
+    <%= form_for [@product, @review] do |f| %>
+    <p>
+      <%= f.label :content %><br>
+      <%= f.text_field :content, :rows => 10, :cols => 40 %>
+    </p>
+    <p>
+      <%= f.submit "Add Review" %>
+    </p>
+  <% end %>
+  </div>
+</div>
