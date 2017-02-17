@@ -1,0 +1,11 @@
+<div class="container-fluid">
+  <div class="panel panel-default blue-panel">
+    <h3><%= @product.name %></h3>
+    <h4><%= @product.description %></h4>
+    <h4><%= @product.price %></h4>
+    <button><%= link_to "Edit Product", edit_product_path(@product) %></button>
+    <button><%= link_to "Delete", product_path(@product),
+                        :data => {:confirm => "You sure?",
+                          :method => "delete"} %></button>
+  </div>
+</div>

@@ -35,7 +35,7 @@ hr {
   background-color: rgba(252, 103, 97, 0.6);
 }
 
-h2 form {
+h2 {
   text-align: center;
 }
 
@@ -47,4 +47,10 @@ h2 form {
   border: 2px solid rgba(12, 77, 99, 0.4);
   margin-left: 5%;
   align-items: center;
+}
+
+.blue-panel {
+  background-color: rgba(141, 215, 212, 0.8);
+  padding: 2%;
+  text-align: center;
 }

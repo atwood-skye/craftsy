@@ -12,9 +12,9 @@
   <% @products.each do |product| %>
   <div class="panel panel-default product-panel">
     <div class="panel-body">
-      <h2><%= product.name %></h2>
+      <h2><%= link_to product.name, product_path(product), :style=>'color:#fff;' %></h2>
       <p><%= product.description %></p>
-      <p><%= product.price %></p>
+      <p>$<%= product.price %>0</p>
     </div>
   </div>
   <% end %>

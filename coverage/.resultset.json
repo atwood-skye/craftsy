@@ -599,7 +599,7 @@
       "/Users/Guest/Desktop/craftsy/app/controllers/home_controller.rb": [
         1,
         1,
-        1,
+        2,
         null,
         null
       ],
@@ -607,7 +607,7 @@
         1,
         null,
         1,
-        0,
+        1,
         null,
         null,
         1,
@@ -627,7 +627,26 @@
         null,
         1,
         1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
         0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        1,
+        1,
         null,
         null,
         null
@@ -702,12 +721,28 @@
         1,
         1,
         1,
+        1,
         null,
         null
       ],
       "/Users/Guest/Desktop/craftsy/spec/support/factory_girl.rb": [
         1,
         1,
+        null
+      ],
+      "/Users/Guest/Desktop/craftsy/spec/features/update_product_pages_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/Guest/Desktop/craftsy/spec/models/product_spec.rb": [
@@ -740,9 +775,13 @@
         1,
         1,
         null,
+        1,
+        1,
+        1,
+        null,
         null
       ]
     },
-    "timestamp": 1487357919
+    "timestamp": 1487366060
   }
 }
