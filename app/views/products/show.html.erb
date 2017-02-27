@@ -3,9 +3,24 @@
     <h3><%= @product.name %></h3>
     <h4><%= @product.description %></h4>
     <h4><%= @product.price %></h4>
-    <button><%= link_to "Edit Product", edit_product_path(@product) %></button>
-    <button><%= link_to "Delete", product_path(@product),
+    <button><%= link_to "Review Product", new_product_review_path(@product) %></button>
+    <% if current_user.admin === true %>
+      <button><%= link_to "Edit Product", edit_product_path(@product) %></button>
+      <button><%= link_to "Delete", product_path(@product),
                         :data => {:confirm => "You sure?",
                           :method => "delete"} %></button>
+    <% end %>
+    <hr>
+    <h3>Reviews</h3>
+    <% if @product.reviews.any? %>
+    <% @product.reviews.each do |review| %>
+      <h4><%= review.content %></h4>
+      <% if current_user %>
+        <% if current_user.admin === true %>
+        <button><%= link_to "Delete Review", product_review_path(@product, review), :data => {:confirm => "You sure?", :method => "delete"} %></button>
+          <% end %>
+        <% end %>
+    <% end %>
+    <% end %>
   </div>
 </div>

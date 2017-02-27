@@ -6,37 +6,60 @@ class ProductsController < ApplicationController
   end
 
   def new
-    @product = Product.new
+    if current_user.admin?
+      @product = Product.new
+    else
+      flash[:alert] = "You can't do that!"
+      redirect_to :controller => 'home'
+    end
   end
 
   def create
-    @product = Product.new(product_params)
-    if @product.save
-      flash[:notice] = "Your product has been successfully added!"
-      redirect_to :controller => 'home'
+    if current_user.admin?
+      @product = Product.new(product_params)
+      if @product.save
+        redirect_to :controller => 'home'
+      else
+        render :new
+      end
     else
-      flash[:alert] = "There was an issue adding your product. Please try again."
-      render :new
+      flash[:alert] = "You don't have access to this"
+      redirect_to :controller => 'home'
     end
   end
 
   def edit
-    @product = Product.find(params[:id])
+    if current_user.admin?
+      @product = Product.find(params[:id])
+    else
+      flash[:alert] = "You can't do that"
+      redirect_to :controller => 'home'
+    end
   end
 
   def update
-    @product = Product.find(params[:id])
-    if @product.update(product_params)
-      redirect_to :controller => 'home'
+    if current_user.admin?
+      @product = Product.find(params[:id])
+      if @product.update(product_params)
+        redirect_to :controller => 'home'
+    end
     else
       render :edit
     end
   end
 
   def destroy
-    @product = Product.find(params[:id])
-    @product.destroy
-    redirect_to :controller => 'home'
+    if current_user.admin?
+      @product = Product.find(params[:id])
+      if @product.destroy
+        @product.reviews.each do |review|
+          review.destroy
+        end
+      end
+      redirect_to :controller => 'home'
+    else
+      render :show
+    end
   end
 
 private
